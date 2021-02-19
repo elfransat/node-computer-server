@@ -2,7 +2,7 @@
 
 A demonstration of this project can be seen below
 
-[a relative link](./project-demo/project3.gif)
+![Video showing interaction with app](./project-demo/project3.gif)
 
 To run the application
 
