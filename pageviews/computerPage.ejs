@@ -1,0 +1,13 @@
+<%- include('./partials/header.ejs') %>
+
+<main>
+  <h1>Computer <%= result.id %></h1>
+  <div class="get-computer-card">
+    <p class="get-computer-info">Computer ID: <%= result.id %></p>
+    <p class="get-computer-info">name: <%= result.name %></p>
+    <p class="get-computer-info">Type: <%= result.type %></p>
+    <p class="get-computer-info">Amount: <%= result.amount %></p>
+    <p class="get-computer-info">Price: <%= result.price %></p>
+    <a href="/"><button>Menu</button></a>
+  </div>
+</main>

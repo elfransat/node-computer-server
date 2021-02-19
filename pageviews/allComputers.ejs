@@ -1,0 +1,28 @@
+<%- include('./partials/header.ejs') %>
+
+<main>
+  <h2>All computers</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% result.forEach(computer=>{ %>
+      <tr>
+        <td><%= computer.id %></td>
+        <td><%= computer.name %></td>
+        <td><%= computer.type %></td>
+        <td><%= computer.amount %></td>
+        <td><%= computer.price %></td>
+      </tr>
+      <% }) %>
+    </tbody>
+  </table>
+  <a href="/"><button>Menu</button></a>
+</main>

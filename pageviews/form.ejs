@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('./partials/header.ejs') %>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <main>
+      <h1 class="updateheading"><%= header %></h1>
+      <form class="form" action=" <%= action %> " method="POST">
+        <!-- POST used when changing database content. 'action' = URL where the data is send for processing on submit -->
+        <div>
+          <% if(!result){ %>
+          <p class="form-group">
+            <label for="id">Computer ID</label>
+            <input
+              type="text"
+              id="id"
+              name="id"
+              size="5"
+              value="<%= id.value %>"
+            />
+          </p>
+
+          <% } else { %>
+          <p class="form-group">
+            <label for="id">Computer ID</label>
+            <select name="id" id="id">
+              <% result.map(computer => { %>
+              <option value="<%= computer.id %>"><%= computer.id %></option>
+              <% }) %>
+            </select>
+          </p>
+          <% } %>
+          <p class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value=" <%= name.value %>"
+            />
+          </p>
+          <p class="form-group">
+            <label for="age">type</label>
+            <input
+              type="text"
+              id="type"
+              name="type"
+              value=" <%= type.value %>"
+            />
+          </p>
+          <p class="form-group">
+            <label for="amount">amount</label>
+            <input
+              type="text"
+              id="amount"
+              name="amount"
+              value=" <%= amount.value %>"
+            />
+          </p>
+          <p class="form-group">
+            <label for="price">Price</label>
+            <input
+              type="text"
+              id="price"
+              name="price"
+              value=" <%= price.value %>"
+            />
+          </p>
+        </div>
+        <button type="submit"><%= button %></button>
+      </form>
+      <a href="/"><button>Back to home page</button></a>
+    </main>
+  </body>
+</html>

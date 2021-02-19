@@ -1,0 +1,19 @@
+{
+  "name": "louis_atkinson_computer_project",
+  "version": "1.0.0",
+  "description": "Node and express assignement",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Louis Atkinson",
+  "license": "ISC",
+  "dependencies": {
+    "deploy-node-app": "^2.2.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "14.14.0"
+  }
+}

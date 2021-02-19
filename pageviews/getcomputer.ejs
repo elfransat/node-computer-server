@@ -1,0 +1,19 @@
+<%- include('./partials/header.ejs') %>
+
+<main>
+    <h1><%= header %></h1>
+    <form action="<%= action %>" method="POST">
+        <p>
+            <label for="ID">ID</label>
+            <select name="id" id="id">
+                <option value="" selected disabled></option>
+                <% result.map(computer => { %>
+                <option name="<%= computer.id %>" value="<%= computer.id %>"><%= computer.id %>
+                </option>
+                <% }) %>
+            </select>
+        </p>
+        <button type="submit"><%= button %></button><a href="/"><button type="button">Back</button></a> 
+    </<button>
+</main>
+

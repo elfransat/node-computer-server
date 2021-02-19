@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "Xunil 4.7",
+        "type": "tabletop",
+        "amount": 7,
+        "price": 1500
+    },
+    {
+        "id": 7,
+        "name": "BigFlop Mark II",
+        "type": "server",
+        "amount": 30,
+        "price": 200
+    },
+    {
+        "id": 5,
+        "name": "MaxEffect 2000",
+        "type": "laptop",
+        "amount": 10,
+        "price": 2000
+    },
+    {
+        "id": 2,
+        "name": "King 3000",
+        "type": "gameover",
+        "amount": 100,
+        "price": 300
+    },
+    {
+        "id": 4,
+        "name": "GameDelux",
+        "type": "embedded",
+        "amount": 1,
+        "price": 700
+    },
+    {
+        "id": 13,
+        "name": " asd",
+        "type": " sdf",
+        "amount": "10 ",
+        "price": " 1000"
+    },
+    {
+        "id": 21,
+        "name": " asd",
+        "type": "asd ",
+        "amount": "11 ",
+        "price": " 11"
+    }
+]
